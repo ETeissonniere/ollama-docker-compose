@@ -1,0 +1,1 @@
+A simple docker compose setup for Ollama + Open Web UI + SearxNG (for web search) + stable diffusion.
