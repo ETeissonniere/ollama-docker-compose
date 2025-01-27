@@ -28,9 +28,12 @@ services:
       - stable-diffusion
     ports:
       - ${OPEN_WEBUI_PORT-3000}:8080
+    env_file:
+      # Use this to add environment variables you do not want to commit to the repo
+      - .env
     environment:
-      - 'OLLAMA_BASE_URL=http://ollama:11434'
-      - 'WEBUI_SECRET_KEY='
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - WEBUI_SECRET_KEY=
       # Community stuff we don't need
       - ENABLE_EVALUATION_ARENA_MODELS=False
       - ENABLE_COMMUNITY_SHARING=False
