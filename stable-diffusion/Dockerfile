@@ -1,3 +1,5 @@
+# Source https://github.com/Neo-Diamons/Docker-AI-Webui/blob/main/stable-diffusion/Dockerfile
+
 FROM python:3.10-slim-bullseye
 
 # Install the required packages
